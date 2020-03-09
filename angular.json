@@ -124,6 +124,321 @@
           }
         }
       }
+    },
+    "@dilta/web-auth": {
+      "projectType": "library",
+      "root": "projects/dilta/web-auth",
+      "sourceRoot": "projects/dilta/web-auth/src",
+      "prefix": "auth",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/web-auth/tsconfig.lib.json",
+            "project": "projects/dilta/web-auth/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/web-auth/src/test.ts",
+            "tsConfig": "projects/dilta/web-auth/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/web-auth/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/web-auth/tsconfig.lib.json",
+              "projects/dilta/web-auth/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/client-shared": {
+      "projectType": "library",
+      "root": "projects/dilta/client-shared",
+      "sourceRoot": "projects/dilta/client-shared/src",
+      "prefix": "shared",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/client-shared/tsconfig.lib.json",
+            "project": "projects/dilta/client-shared/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/client-shared/src/test.ts",
+            "tsConfig": "projects/dilta/client-shared/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/client-shared/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/client-shared/tsconfig.lib.json",
+              "projects/dilta/client-shared/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/router": {
+      "projectType": "library",
+      "root": "projects/dilta/router",
+      "sourceRoot": "projects/dilta/router/src",
+      "prefix": "router",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/router/tsconfig.lib.json",
+            "project": "projects/dilta/router/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/router/src/test.ts",
+            "tsConfig": "projects/dilta/router/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/router/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/router/tsconfig.lib.json",
+              "projects/dilta/router/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/web-transport": {
+      "projectType": "library",
+      "root": "projects/dilta/web-transport",
+      "sourceRoot": "projects/dilta/web-transport/src",
+      "prefix": "transport",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/web-transport/tsconfig.lib.json",
+            "project": "projects/dilta/web-transport/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/web-transport/src/test.ts",
+            "tsConfig": "projects/dilta/web-transport/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/web-transport/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/web-transport/tsconfig.lib.json",
+              "projects/dilta/web-transport/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/dynamic-grid": {
+      "projectType": "library",
+      "root": "projects/dilta/dynamic-grid",
+      "sourceRoot": "projects/dilta/dynamic-grid/src",
+      "prefix": "acada",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/dynamic-grid/tsconfig.lib.json",
+            "project": "projects/dilta/dynamic-grid/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/dynamic-grid/src/test.ts",
+            "tsConfig": "projects/dilta/dynamic-grid/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/dynamic-grid/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/dynamic-grid/tsconfig.lib.json",
+              "projects/dilta/dynamic-grid/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/web-management": {
+      "projectType": "library",
+      "root": "projects/dilta/web-management",
+      "sourceRoot": "projects/dilta/web-management/src",
+      "prefix": "web",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/web-management/tsconfig.lib.json",
+            "project": "projects/dilta/web-management/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/web-management/src/test.ts",
+            "tsConfig": "projects/dilta/web-management/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/web-management/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/web-management/tsconfig.lib.json",
+              "projects/dilta/web-management/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/web-academics": {
+      "projectType": "library",
+      "root": "projects/dilta/web-academics",
+      "sourceRoot": "projects/dilta/web-academics/src",
+      "prefix": "web",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/web-academics/tsconfig.lib.json",
+            "project": "projects/dilta/web-academics/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/web-academics/src/test.ts",
+            "tsConfig": "projects/dilta/web-academics/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/web-academics/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/web-academics/tsconfig.lib.json",
+              "projects/dilta/web-academics/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/web-analytics": {
+      "projectType": "library",
+      "root": "projects/dilta/web-analytics",
+      "sourceRoot": "projects/dilta/web-analytics/src",
+      "prefix": "web",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/web-analytics/tsconfig.lib.json",
+            "project": "projects/dilta/web-analytics/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/web-analytics/src/test.ts",
+            "tsConfig": "projects/dilta/web-analytics/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/web-analytics/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/web-analytics/tsconfig.lib.json",
+              "projects/dilta/web-analytics/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@dilta/printing-press": {
+      "projectType": "library",
+      "root": "projects/dilta/printing-press",
+      "sourceRoot": "projects/dilta/printing-press/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dilta/printing-press/tsconfig.lib.json",
+            "project": "projects/dilta/printing-press/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dilta/printing-press/src/test.ts",
+            "tsConfig": "projects/dilta/printing-press/tsconfig.spec.json",
+            "karmaConfig": "projects/dilta/printing-press/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dilta/printing-press/tsconfig.lib.json",
+              "projects/dilta/printing-press/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "marker"
 }

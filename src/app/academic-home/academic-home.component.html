@@ -1,0 +1,25 @@
+<lib-academic-tool-bar (sidebar)="toggleSidebar()" ></lib-academic-tool-bar>
+<mat-sidenav-container class="app-container">
+  <mat-sidenav (closed)="toggleSidebar()" class="side-container" mode="over" [opened]="openSideBar">
+    <img [src]="(school$ | async)?.logo" height="120px"  >
+    <div class="side-container" *ngFor="let item, let i of $menus | async">
+      <button
+        mat-raised-button
+        color="secondary"
+        (click)="topLevel(item)"
+        >{{ item.title }}   </button
+      >
+      <div class="container sub-menus" *ngIf="map[item.title] && item.routes">
+        <a mat-button *ngFor="let subItem of item.routes" (click)="trigger(subItem)">
+          {{ subItem.title }}
+        </a>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="container">
+    <div >
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

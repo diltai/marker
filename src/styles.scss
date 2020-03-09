@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+html,
+body {
+    height: 96%;
+    width: 99%;
+}
+
+.spacer-full {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+// #3f51b5
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 25%;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menus {
+  align-items: flex-start;
+  text-align: right;
+}
+
+
+
+.mobile-bar {
+    display: flex;
+    visibility: hidden;
+}
+
+.desktop-bar {
+    display: flex;
+    visibility: visible;
+}
+
+mat-toolbar {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 480px) {
+    .mobile-bar {
+        visibility: visible;
+        justify-content: space-around;
+    }
+    .desktop-bar {
+        visibility: hidden;
+    }
+}

@@ -17,7 +17,63 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@dilta/web-auth": [
+        "dist/dilta/web-auth"
+      ],
+      "@dilta/web-auth/*": [
+        "dist/dilta/web-auth/*"
+      ],
+      "@dilta/client-shared": [
+        "dist/dilta/client-shared"
+      ],
+      "@dilta/client-shared/*": [
+        "dist/dilta/client-shared/*"
+      ],
+      "@dilta/router": [
+        "dist/dilta/router"
+      ],
+      "@dilta/router/*": [
+        "dist/dilta/router/*"
+      ],
+      "@dilta/web-transport": [
+        "dist/dilta/web-transport"
+      ],
+      "@dilta/web-transport/*": [
+        "dist/dilta/web-transport/*"
+      ],
+      "@dilta/dynamic-grid": [
+        "dist/dilta/dynamic-grid"
+      ],
+      "@dilta/dynamic-grid/*": [
+        "dist/dilta/dynamic-grid/*"
+      ],
+      "@dilta/web-management": [
+        "dist/dilta/web-management"
+      ],
+      "@dilta/web-management/*": [
+        "dist/dilta/web-management/*"
+      ],
+      "@dilta/web-academics": [
+        "dist/dilta/web-academics"
+      ],
+      "@dilta/web-academics/*": [
+        "dist/dilta/web-academics/*"
+      ],
+      "@dilta/web-analytics": [
+        "dist/dilta/web-analytics"
+      ],
+      "@dilta/web-analytics/*": [
+        "dist/dilta/web-analytics/*"
+      ],
+      "@dilta/printing-press": [
+        "dist/dilta/printing-press"
+      ],
+      "@dilta/printing-press/*": [
+        "dist/dilta/printing-press/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
