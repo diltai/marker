@@ -30,7 +30,7 @@
     "jspdf": "^1.5.3",
     "jspdf-autotable": "^3.2.11",
     "lodash": "^4.17.15",
-    "mathjs": "^6.2.5",
+    "mathjs": "^7.5.1",
     "ng-snotify": "^4.3.1",
     "ngx-uploader": "^8.0.0",
     "rxjs": "~6.4.0",
